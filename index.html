@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Happy Birthday Nishtha 💖</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- Floating hearts layer -->
+  <div class="hearts" id="hearts"></div>
+
+  <!-- Music button -->
+  <button class="music-btn" id="musicBtn">
+    🎵 Tap to Play
+  </button>
+
+  <audio id="bgMusic" loop>
+    <source src="assets/song.mp3" type="audio/mp3" />
+  </audio>
+
+  <!-- MAIN -->
+  <main class="container">
+
+    <!-- HERO -->
+    <section class="hero">
+      <div class="hero-left">
+        <p class="tag">A little birthday website by Yug 💌</p>
+        <h1 class="title">
+          Happy Birthday <span>Nishtha</span> 💖
+        </h1>
+
+        <p class="subtitle">
+          Today is your day — and I wanted to give you something that feels
+          as special as you are.
+        </p>
+
+        <div class="hero-actions">
+          <button class="btn primary" id="scrollToLetter">
+            Open your letter 💌
+          </button>
+          <button class="btn ghost" id="scrollToGallery">
+            Our memories 📸
+          </button>
+        </div>
+
+        <div class="counter-card">
+          <p class="counter-title">Since you came into my life…</p>
+          <div class="counter" id="togetherCounter">Loading...</div>
+          
+          </p>
+        </div>
+      </div>
+
+      <div class="hero-right">
+        <div class="photo-frame">
+          <img src="assets/nishtha-main.jpg" alt="Nishtha" class="main-photo">
+          <div class="photo-glow"></div>
+        </div>
+        <p class="photo-caption">My favorite smile 🥺✨</p>
+      </div>
+    </section>
+
+    <!-- LOVE MESSAGE -->
+    <section class="section soft" id="letter">
+      <h2 class="section-title">A letter for you 💗</h2>
+      <p class="section-subtitle">
+        Click the button and read it slowly… because I mean every word.
+      </p>
+
+      <div class="letter-card">
+        <div class="letter-header">
+          <div class="stamp">To: Nishtha 💖</div>
+          <button class="btn primary small" id="startTyping">
+            Start Reading ✨
+          </button>
+        </div>
+
+        <div class="letter-body" id="typedText"></div>
+
+        <div class="letter-footer">
+          <p>— Yours, always.</p>
+          <p class="signature">Yug</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- GALLERY -->
+    <section class="section" id="gallery">
+      <h2 class="section-title">Our memories 📸</h2>
+      <p class="section-subtitle">
+        Just a few moments I never want to forget.
+      </p>
+
+      <div class="gallery">
+        <div class="polaroid">
+          <img src="assets/pic1.jpg" alt="Memory 1">
+          <p>Us being us</p>
+        </div>
+
+        <div class="polaroid">
+          <img src="assets/pic2.jpg" alt="Memory 2">
+          <p>Coffee Dates >>></p>
+        </div>
+
+        <div class="polaroid">
+          <img src="assets/pic3.jpg" alt="Memory 3">
+          <p>My safe place 🤍</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- SURPRISE -->
+    <section class="section soft">
+      <h2 class="section-title">One last surprise 🎁</h2>
+      <p class="section-subtitle">
+        Click it when you’re ready…
+      </p>
+
+      <div class="surprise-card">
+        <button class="btn primary big" id="surpriseBtn">
+          Click for Surprise 💘
+        </button>
+
+        <div class="surprise-text" id="surpriseText">
+          Nishtha… you are my favorite person in the whole world 💗  
+          And I’m proud of you. Always.  
+          Happy Birthday, my love 🥺🎂✨
+        </div>
+
+        <canvas id="confetti"></canvas>
+      </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer class="footer">
+      <p>
+        Made with love 💖 by <b>Yug</b> for <b>Nishtha</b>.
+      </p>
+    </footer>
+
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
